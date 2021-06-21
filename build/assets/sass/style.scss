@@ -17,7 +17,16 @@ body {
   &_accent {
     color: $active-color;
   }
+  &_bold {
+    font-weight: 700;
+  }
+}
+
+.line-break {
+  display: block;
+
 }
 
 @import "header";
+@import "promo";
 @import "media";

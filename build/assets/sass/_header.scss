@@ -1,8 +1,12 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
   padding: 30px 0;
-  -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.15);
-  -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.15);
-  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.05);
+  background-color: $alt-text-color;
   &__wrap {
     display: flex;
     justify-content: space-between;

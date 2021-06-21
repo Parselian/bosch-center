@@ -44,5 +44,29 @@ require_once(__DIR__.'/assets/configs/config.php');
 	</div>
 </header>
 
+<section class="promo">
+	<div class="container promo__wrap">
+		<h1 class="promo__title">
+			Ремонт бытовой
+			<span class="line-break"></span>
+			техники <span class="text_accent text_bold"><?= $brand_name?></span>
+			<span class="line-break"></span>
+			в Санкт-Петербурге
+		</h1>
+		<div class="promo__subtitle">Оффициальный представитель <?= $brand_name?> в СПб</div>
+		<button class="button button_accent promo__button">Заказать ремонт</button>
+		<div class="promo__footfeature">
+			<svg class="promo__footfeature-icon">
+				<use xlink:href="./assets/stack/sprite.svg#truck"></use>
+			</svg>
+
+			Бесплатный выезд мастера
+		</div>
+		<picture>
+			<source srcset="./assets/images/webp/promo-collage.webp" type="image/webp">
+			<img src="./assets/images/promo-collage.png" alt="Ремонт бытовой техники <?= $brand_name?> в СПб" class="promo__collage">
+		</picture>
+	</div>
+</section>
 </body>
 </html>
