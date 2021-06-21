@@ -50,7 +50,8 @@ select, input, button {
       font-size: 17px;
       font-weight: 700; }
   .header__contacts {
-    display: flex; }
+    display: flex;
+    align-items: center; }
     .header__contacts-block {
       margin-left: 30px;
       position: relative;
@@ -339,6 +340,11 @@ select, input, button {
     font-size: 22px;
     text-align: center; }
 
+.footer__policy {
+  color: #EA0016;
+  text-align: right;
+  height: fit-content; }
+
 @media (max-width: 1200px) {
   .header__contacts-block:not(:last-child) {
     margin-right: 30px; }
@@ -399,7 +405,19 @@ select, input, button {
   .request__form-col {
     width: 40%; }
   .request__form-textarea-wrap {
-    width: 58%; } }
+    width: 58%; }
+  .footer__wrap {
+    position: relative;
+    margin-bottom: 40px; }
+  .footer__policy {
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%; }
+    .footer__policy .line-break {
+      display: inline-block; } }
 
 @media (max-width: 768px) {
   .header__contacts {

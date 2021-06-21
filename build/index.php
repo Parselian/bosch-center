@@ -290,6 +290,32 @@ require_once(__DIR__ . '/assets/configs/config.php');
 	</div>
 </section>
 
+<footer class="header">
+	<div class="container header__wrap footer__wrap">
+		<div class="header__logo">
+			<span class="text_accent line-break">Оффициальный</span>
+			сервис <?= $brand_name; ?>
+		</div>
+		<div class="header__contacts footer__contacts">
+			<div class="header__contacts-block">
+				<svg class="header__contacts-block-icon">
+					<use xlink:href="./assets/stack/sprite.svg#call"></use>
+				</svg>
+				<div class="header__contacts-block-label">Наш телефон:</div>
+				<a href="tel: <?= $phone_link ?>" class="header__contacts-block-info"><?= $phone_format ?></a>
+			</div>
+			<div class="header__contacts-block">
+				<svg class="header__contacts-block-icon">
+					<use xlink:href="./assets/stack/sprite.svg#clock"></use>
+				</svg>
+				<div class="header__contacts-block-label">Мы работаем:</div>
+				<div class="header__contacts-block-info">Ежедневно: 8:00 — 23:00</div>
+			</div>
+			<a href="./politika.html" class="footer__policy">Политика <span class="line-break"></span> конфиденциальности</a>
+		</div>
+	</div>
+</footer>
+
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

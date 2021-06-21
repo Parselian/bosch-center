@@ -118,6 +118,23 @@
       }
     }
   }
+  .footer {
+    &__wrap {
+      position: relative;
+      margin-bottom: 40px;
+    }
+    &__policy {
+      position: absolute;
+      left: 50%;
+      bottom: -35px;
+      transform: translateX(-50%);
+      text-align: center;
+      width: 100%;
+      .line-break {
+        display: inline-block;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
