@@ -97,5 +97,85 @@ require_once(__DIR__.'/assets/configs/config.php');
 		</div>
 	</div>
 </section>
+
+<section class="devices">
+	<div class="container devices__wrap">
+		<h2 class="section__title">Виды обслуживаемой техники <?= $brand_name?></h2>
+		<div class="devices__cards">
+			<div class="devices__card">
+				<div class="devices__card-title"><span class="text_bold line-break">Стиральные</span> машины</div>
+				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<picture>
+					<source srcset="./assets/images/webp/washing-machine.webp" type="image/webp">
+					<img src="./assets/images/washing-machine.jpg" alt="Ремонт бытовой техники <?=$brand_name?> в СПб" class="devices__card-img">
+				</picture>
+			</div>
+			<div class="devices__card">
+				<div class="devices__card-title"><span class="text_bold line-break">Посудомоечные</span> машины</div>
+				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<picture>
+					<source srcset="./assets/images/webp/dishwasher.webp" type="image/webp">
+					<img src="./assets/images/dishwasher.jpg" alt="Ремонт бытовой техники <?=$brand_name?> в СПб" class="devices__card-img">
+				</picture>
+			</div>
+			<div class="devices__card">
+				<div class="devices__card-title"><span class="text_bold line-break">Варочные</span> панели</div>
+				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<picture>
+					<source srcset="./assets/images/webp/hob.webp" type="image/webp">
+					<img src="./assets/images/hob.jpg" alt="Ремонт бытовой техники <?=$brand_name?> в СПб" class="devices__card-img">
+				</picture>
+			</div>
+			<div class="devices__card">
+				<div class="devices__card-title"><span class="text_bold line-break">Духовые</span>шкафы</div>
+				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<picture>
+					<source srcset="./assets/images/webp/oven-cabinet.webp" type="image/webp">
+					<img src="./assets/images/oven-cabinet.jpg" alt="Ремонт бытовой техники <?=$brand_name?> в СПб" class="devices__card-img">
+				</picture>
+			</div>
+			<div class="devices__card">
+				<div class="devices__card-title"><span class="text_bold line-break">Сушильные</span> машины</div>
+				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<picture>
+					<source srcset="./assets/images/webp/drying-machine.webp" type="image/webp">
+					<img src="./assets/images/drying-machine.jpg" alt="Ремонт бытовой техники <?=$brand_name?> в СПб" class="devices__card-img">
+				</picture>
+			</div>
+			<div class="devices__card">
+				<div class="devices__card-title"><span class="text_bold line-break">Микроволновые</span> печи</div>
+				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<picture>
+					<source srcset="./assets/images/webp/microoven.webp" type="image/webp">
+					<img src="./assets/images/microoven.jpg" alt="Ремонт бытовой техники <?=$brand_name?> в СПб" class="devices__card-img">
+				</picture>
+			</div>
+			<div class="devices__card">
+				<div class="devices__card-title"><span class="text_bold">Кофемашины</span></div>
+				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<picture>
+					<source srcset="./assets/images/webp/coffee-machine.webp" type="image/webp">
+					<img src="./assets/images/coffee-machine.jpg" alt="Ремонт бытовой техники <?=$brand_name?> в СПб" class="devices__card-img">
+				</picture>
+			</div>
+			<div class="devices__card">
+				<div class="devices__card-title"><span class="text_bold">Холодильники</span></div>
+				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<picture>
+					<source srcset="./assets/images/webp/fridge.webp" type="image/webp">
+					<img src="./assets/images/fridge.jpg" alt="Ремонт бытовой техники <?=$brand_name?> в СПб" class="devices__card-img">
+				</picture>
+			</div>
+			<div class="devices__card">
+				<div class="devices__card-title"><span class="text_bold">Вытяжки</span></div>
+				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<picture>
+					<source srcset="./assets/images/webp/range-hood.webp" type="image/webp">
+					<img src="./assets/images/range-hood.jpg" alt="Ремонт бытовой техники <?=$brand_name?> в СПб" class="devices__card-img">
+				</picture>
+			</div>
+		</div>
+	</div>
+</section>
 </body>
 </html>

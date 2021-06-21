@@ -4,6 +4,16 @@ body {
   font-family: 'Open Sans', sans-serif, -apple-system;
 }
 
+.section {
+  &__title {
+    margin-bottom: 60px;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+}
+
 .button {
   padding: 10px 20px;
   font-size: 18px;
@@ -30,4 +40,5 @@ body {
 @import "header";
 @import "promo";
 @import "steps";
+@import "devices";
 @import "media";
