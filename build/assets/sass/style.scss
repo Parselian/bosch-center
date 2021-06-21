@@ -34,7 +34,10 @@ body {
 
 .line-break {
   display: block;
+}
 
+select, input, button {
+  cursor: pointer;
 }
 
 @import "header";
@@ -42,4 +45,5 @@ body {
 @import "steps";
 @import "devices";
 @import "contacts";
+@import "request";
 @import "media";
