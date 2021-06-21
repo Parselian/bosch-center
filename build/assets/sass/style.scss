@@ -1,3 +1,23 @@
 @import "variables";
 
+body {
+  font-family: 'Open Sans', sans-serif, -apple-system;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 18px;
+  &_accent {
+    color: $alt-text-color;
+    background-color: $active-color;
+  }
+}
+
+.text {
+  &_accent {
+    color: $active-color;
+  }
+}
+
+@import "header";
 @import "media";
