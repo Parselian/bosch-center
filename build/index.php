@@ -68,5 +68,34 @@ require_once(__DIR__.'/assets/configs/config.php');
 		</picture>
 	</div>
 </section>
+
+<section class="steps">
+	<div class="container steps__wrap">
+		<div class="steps__block">
+			<div class="steps__block-count">01</div>
+			<div class="steps__block-text">
+				Оставляете заявку на сайте или по телефону
+			</div>
+		</div>
+		<div class="steps__block">
+			<div class="steps__block-count">02</div>
+			<div class="steps__block-text">
+				В течение <span class="text_accent">5 минут</span> с Вами связывается Ваш мастер и конслультирует по поломке
+			</div>
+		</div>
+		<div class="steps__block">
+			<div class="steps__block-count">03</div>
+			<div class="steps__block-text">
+				В течение <span class="text_accent">20 минут</span> Ваш мастер будет у вас со всем нужным оборудованием
+			</div>
+		</div>
+		<div class="steps__block">
+			<div class="steps__block-count">04</div>
+			<div class="steps__block-text">
+				После ремонта Вы получаете комплект документов с гарантией на ремонт
+			</div>
+		</div>
+	</div>
+</section>
 </body>
 </html>
