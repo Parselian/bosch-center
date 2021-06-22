@@ -352,6 +352,21 @@ require_once(__DIR__ . '/assets/configs/config.php');
 	</form>
 </div>
 
+<div class="popup popup-thanks">
+	<div class="popup-form">
+		<svg class="popup-form__close">
+			<use xlink:href="./assets/stack/sprite.svg#popup-close"></use>
+		</svg>
+		<h2 class="popup-form__title">Спасибо!</h2>
+		<div class="popup-form__subtitle">
+			Наш оператор свяжется с вами через 2 минуты
+		</div>
+
+		<button type="submit" class="button button_accent popup-form__button">Закрыть</button>
+
+	</div>
+</div>
+
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
