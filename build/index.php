@@ -9,7 +9,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="./assets/css/reset.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/style.css?<?= time();?>">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -250,7 +250,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 				Чтобы мастер смог определить вашу проблему как можно точнее оставьте дополнительные данные:
 			</div>
 
-			<div class="request__form-row ">
+			<div class="request__form-row">
 				<div class="request__form-col">
 					<div class="request__form-select-wrap">
 						<label for="device-select" class="request__form-select-label">Какое устройство:</label>
@@ -315,6 +315,42 @@ require_once(__DIR__ . '/assets/configs/config.php');
 		</div>
 	</div>
 </footer>
+
+<div class="popup popup-request">
+	<form action="./assets/configs/mail.php" method="POST" class="popup-form">
+		<svg class="popup-form__close">
+			<use xlink:href="./assets/stack/sprite.svg#popup-close"></use>
+		</svg>
+		<h2 class="popup-form__title">Заявка на ремонт</h2>
+		<div class="popup-form__subtitle">
+			Оставьте свои контактные данные и мы свяжемся с вами через 2 минуты
+		</div>
+		<div class="request__form-input-wrap popup-form__input-wrap">
+			<label for="user-name" class="request__form-input-label">
+				Ваше имя:
+				<svg class="request__form-input-icon">
+					<use xlink:href="./assets/stack/sprite.svg#user"></use>
+				</svg>
+			</label>
+			<input id="user-name" type="text" name="user_name" class="request__form-input" placeholder="Ваше имя">
+		</div>
+
+		<div class="request__form-input-wrap popup-form__input-wrap">
+			<label for="user-phone" class="request__form-input-label">Ваш телефон:*</label>
+			<input id="user-phone" type="text" name="user_phone" class="request__form-input" placeholder="+7 (999) 999-99-99">
+			<svg class="request__form-input-icon">
+				<use xlink:href="./assets/stack/sprite.svg#call"></use>
+			</svg>
+		</div>
+
+		<button type="submit" class="button button_accent popup-form__button">Вызвать мастера</button>
+
+		<div class="request__form-footnote popup-form__footnote">
+			Нажимая кнопку "Вызвать мастера" я соглашаюсь с
+			<a href="./politika.html" target="_blank" class="request__form-footnote-link">политикой обработки персональных данных</a>
+		</div>
+	</form>
+</div>
 
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"

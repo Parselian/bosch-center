@@ -135,6 +135,15 @@
       }
     }
   }
+  .popup {
+    &-form {
+      &__input {
+        &-wrap {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -211,6 +220,18 @@
         &_mobile {
           display: block;
         }
+      }
+    }
+  }
+  .popup {
+    &-form {
+      &__input {
+        &-wrap {
+          width: 100%;
+        }
+      }
+      &__footnote {
+        display: block;
       }
     }
   }
@@ -328,6 +349,11 @@
       }
     }
   }
+  .popup {
+    &-form {
+      max-width: 95%;
+    }
+  }
 }
 
 @media (max-width: 405px)  {
@@ -337,6 +363,16 @@
     }
     &__footfeature {
       font-size: 18px;
+    }
+  }
+  .popup {
+    &-form {
+      padding: 30px 20px;
+      max-height: 80vh;
+      overflow-y: auto;
+      &__subtitle {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -352,6 +388,14 @@
       &-text {
         font-size: 16px;
       }
+      &-button {
+        width: 100%;
+      }
+    }
+  }
+  .popup {
+    &-form {
+      max-height: 75vh;
     }
   }
 }

@@ -28,8 +28,7 @@ select, input, button {
   cursor: pointer; }
 
 .header {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 9999;
   padding: 30px 0;
   -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
@@ -345,6 +344,47 @@ select, input, button {
   text-align: right;
   height: fit-content; }
 
+.popup {
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  height: 100%;
+  width: 100%; }
+  .popup:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #000;
+    opacity: 0.5; }
+  .popup-form {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    background-color: #fff;
+    transform: translate(-50%, -50%); }
+    .popup-form__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px; }
+    .popup-form__title {
+      margin-bottom: 10px;
+      font-size: 24px; }
+    .popup-form__subtitle {
+      margin-bottom: 25px; }
+    .popup-form__input-wrap {
+      margin-bottom: 20px;
+      width: 100%; }
+
 @media (max-width: 1200px) {
   .header__contacts-block:not(:last-child) {
     margin-right: 30px; }
@@ -417,7 +457,9 @@ select, input, button {
     text-align: center;
     width: 100%; }
     .footer__policy .line-break {
-      display: inline-block; } }
+      display: inline-block; }
+  .popup-form__input-wrap {
+    width: 100%; } }
 
 @media (max-width: 768px) {
   .header__contacts {
@@ -460,7 +502,11 @@ select, input, button {
     display: none;
     text-align: center; }
     .request__form-footnote_mobile {
-      display: block; } }
+      display: block; }
+  .popup-form__input-wrap {
+    width: 100%; }
+  .popup-form__footnote {
+    display: block; } }
 
 @media (max-width: 576px) {
   .section__title {
@@ -521,16 +567,28 @@ select, input, button {
     margin-top: 0; }
   .request__form-text {
     margin-top: 40px;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .popup-form {
+    max-width: 95%; } }
 
 @media (max-width: 405px) {
   .promo__title {
     font-size: 32px; }
   .promo__footfeature {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .popup-form {
+    padding: 30px 20px;
+    max-height: 80vh;
+    overflow-y: auto; }
+    .popup-form__subtitle {
+      font-size: 14px; } }
 
 @media (max-width: 350px) {
   .section__title {
     font-size: 28px; }
   .request__form-text {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .request__form-button {
+    width: 100%; }
+  .popup-form {
+    max-height: 75vh; } }
