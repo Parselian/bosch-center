@@ -376,7 +376,8 @@ select, input, button {
       top: 0;
       right: 0;
       width: 40px;
-      height: 40px; }
+      height: 40px;
+      cursor: pointer; }
     .popup-form__title {
       margin-bottom: 10px;
       font-size: 24px; }
