@@ -40,7 +40,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 				<div class="header__contacts-block-info">Ежедневно: 8:00 — 23:00</div>
 			</div>
 		</div>
-		<button class="button button_accent header__button">Вызвать мастера</button>
+		<button class="button button_accent header__button open-popup-request">Вызвать мастера</button>
 	</div>
 </header>
 
@@ -54,7 +54,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 			в Санкт-Петербурге
 		</h1>
 		<div class="promo__subtitle">Оффициальный представитель <?= $brand_name ?> в СПб</div>
-		<button class="button button_accent promo__button">Заказать ремонт</button>
+		<button class="button button_accent promo__button open-popup-request">Заказать ремонт</button>
 		<div class="promo__footfeature">
 			<svg class="promo__footfeature-icon">
 				<use xlink:href="./assets/stack/sprite.svg#truck"></use>
@@ -104,7 +104,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 		<div class="devices__cards">
 			<div class="devices__card">
 				<div class="devices__card-title"><span class="text_bold line-break">Стиральные</span> машины</div>
-				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<button class="button button_accent devices__card-button open-popup-request">Вызвать мастера</button>
 				<picture>
 					<source srcset="./assets/images/webp/washing-machine.webp" type="image/webp">
 					<img src="./assets/images/washing-machine.jpg" alt="Ремонт бытовой техники <?= $brand_name ?> в СПб"
@@ -113,7 +113,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 			</div>
 			<div class="devices__card">
 				<div class="devices__card-title"><span class="text_bold line-break">Посудомоечные</span> машины</div>
-				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<button class="button button_accent devices__card-button open-popup-request">Вызвать мастера</button>
 				<picture>
 					<source srcset="./assets/images/webp/dishwasher.webp" type="image/webp">
 					<img src="./assets/images/dishwasher.jpg" alt="Ремонт бытовой техники <?= $brand_name ?> в СПб"
@@ -122,7 +122,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 			</div>
 			<div class="devices__card">
 				<div class="devices__card-title"><span class="text_bold line-break">Варочные</span> панели</div>
-				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<button class="button button_accent devices__card-button open-popup-request">Вызвать мастера</button>
 				<picture>
 					<source srcset="./assets/images/webp/hob.webp" type="image/webp">
 					<img src="./assets/images/hob.jpg" alt="Ремонт бытовой техники <?= $brand_name ?> в СПб" class="devices__card-img">
@@ -130,7 +130,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 			</div>
 			<div class="devices__card">
 				<div class="devices__card-title"><span class="text_bold line-break">Духовые</span>шкафы</div>
-				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<button class="button button_accent devices__card-button open-popup-request">Вызвать мастера</button>
 				<picture>
 					<source srcset="./assets/images/webp/oven-cabinet.webp" type="image/webp">
 					<img src="./assets/images/oven-cabinet.jpg" alt="Ремонт бытовой техники <?= $brand_name ?> в СПб"
@@ -139,7 +139,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 			</div>
 			<div class="devices__card">
 				<div class="devices__card-title"><span class="text_bold line-break">Сушильные</span> машины</div>
-				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<button class="button button_accent devices__card-button open-popup-request">Вызвать мастера</button>
 				<picture>
 					<source srcset="./assets/images/webp/drying-machine.webp" type="image/webp">
 					<img src="./assets/images/drying-machine.jpg" alt="Ремонт бытовой техники <?= $brand_name ?> в СПб"
@@ -148,7 +148,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 			</div>
 			<div class="devices__card">
 				<div class="devices__card-title"><span class="text_bold line-break">Микроволновые</span> печи</div>
-				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<button class="button button_accent devices__card-button open-popup-request">Вызвать мастера</button>
 				<picture>
 					<source srcset="./assets/images/webp/microoven.webp" type="image/webp">
 					<img src="./assets/images/microoven.jpg" alt="Ремонт бытовой техники <?= $brand_name ?> в СПб"
@@ -157,7 +157,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 			</div>
 			<div class="devices__card">
 				<div class="devices__card-title"><span class="text_bold">Кофемашины</span></div>
-				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<button class="button button_accent devices__card-button open-popup-request">Вызвать мастера</button>
 				<picture>
 					<source srcset="./assets/images/webp/coffee-machine.webp" type="image/webp">
 					<img src="./assets/images/coffee-machine.jpg" alt="Ремонт бытовой техники <?= $brand_name ?> в СПб"
@@ -166,7 +166,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 			</div>
 			<div class="devices__card">
 				<div class="devices__card-title"><span class="text_bold">Холодильники</span></div>
-				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<button class="button button_accent devices__card-button open-popup-request">Вызвать мастера</button>
 				<picture>
 					<source srcset="./assets/images/webp/fridge.webp" type="image/webp">
 					<img src="./assets/images/fridge.jpg" alt="Ремонт бытовой техники <?= $brand_name ?> в СПб" class="devices__card-img">
@@ -174,7 +174,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 			</div>
 			<div class="devices__card">
 				<div class="devices__card-title"><span class="text_bold">Вытяжки</span></div>
-				<button class="button button_accent devices__card-button">Вызвать мастера</button>
+				<button class="button button_accent devices__card-button open-popup-request">Вызвать мастера</button>
 				<picture>
 					<source srcset="./assets/images/webp/range-hood.webp" type="image/webp">
 					<img src="./assets/images/range-hood.jpg" alt="Ремонт бытовой техники <?= $brand_name ?> в СПб"
@@ -243,7 +243,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 						<use xlink:href="./assets/stack/sprite.svg#call"></use>
 					</svg>
 				</div>
-				<button type="submit" class="button button_accent request__form-button">Вызвать мастера</button>
+				<button type="submit" class="button button_accent request__form-button open-popup-request">Вызвать мастера</button>
 			</div>
 
 			<div class="request__form-text">
@@ -271,7 +271,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 					</div>
 					<div class="request__form-select-wrap">
 						<label for="user-address" class="request__form-input-label">Расположение (метро, район):</label>
-						<input id="user-address" type="text" name="user_phone" class="request__form-input" placeholder="Ваш адрес">
+						<input id="user-address" type="text" name="user_location" class="request__form-input" placeholder="Ваш адрес">
 						<svg class="request__form-input-icon">
 							<use xlink:href="./assets/stack/sprite.svg#placeholder"></use>
 						</svg>
@@ -332,18 +332,18 @@ require_once(__DIR__ . '/assets/configs/config.php');
 			Оставьте свои контактные данные и мы свяжемся с вами через 2 минуты
 		</div>
 		<div class="request__form-input-wrap popup-form__input-wrap">
-			<label for="user-name" class="request__form-input-label">
+			<label for="popup-user-name" class="request__form-input-label">
 				Ваше имя:
 				<svg class="request__form-input-icon">
 					<use xlink:href="./assets/stack/sprite.svg#user"></use>
 				</svg>
 			</label>
-			<input id="user-name" type="text" name="user_name" class="request__form-input" placeholder="Ваше имя">
+			<input id="popup-user-name" type="text" name="user_name" class="request__form-input" placeholder="Ваше имя">
 		</div>
 
 		<div class="request__form-input-wrap popup-form__input-wrap">
-			<label for="user-phone" class="request__form-input-label">Ваш телефон:*</label>
-			<input id="user-phone" type="text" name="user_phone" class="request__form-input" placeholder="+7 (999) 999-99-99">
+			<label for="popup-user-phone" class="request__form-input-label">Ваш телефон:*</label>
+			<input id="popup-user-phone" type="text" name="user_phone" class="request__form-input" placeholder="+7 (999) 999-99-99">
 			<svg class="request__form-input-icon">
 				<use xlink:href="./assets/stack/sprite.svg#call"></use>
 			</svg>
@@ -368,7 +368,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 			Наш оператор свяжется с вами через 2 минуты
 		</div>
 
-		<button type="submit" class="button button_accent popup-form__button">Закрыть</button>
+		<button type="submit" class="button button_accent popup-form__button popup-form__close">Закрыть</button>
 
 	</div>
 </div>
@@ -380,6 +380,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
 		integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous"
 		referrerpolicy="no-referrer"></script>
+<script src="./assets/configs/script.js"></script>
 <script defer>
     // ymaps.ready(init);
 
