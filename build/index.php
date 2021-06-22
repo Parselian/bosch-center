@@ -382,8 +382,6 @@ require_once(__DIR__ . '/assets/configs/config.php');
 		referrerpolicy="no-referrer"></script>
 <script src="./assets/configs/script.js"></script>
 <script defer>
-    // ymaps.ready(init);
-
     setTimeout(() => {
         let elem = document.createElement('script');
 
@@ -478,7 +476,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
         }, {
             // Задаем опции геообъекта.
             // Цвет заливки.
-            fillColor: '#98989850',
+            fillColor: '#98989840',
             // Ширина обводки.
             strokeWidth: 1,
             strokeColor: '#989898FF'
@@ -489,7 +487,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 
         const glyphServicesParams = {
             iconLayout: 'default#image',
-            iconImageHref: './assets/svg/placeholder.svg',
+            iconImageHref: './assets/svg/map-placeholder.svg',
             iconImageSize: [35, 35]
         }
 

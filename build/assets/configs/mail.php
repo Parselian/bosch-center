@@ -1,10 +1,10 @@
 <?php
 
-$name = $_POST['user_name'] ?? '---';
-$phone = $_POST['user_phone'] ?? '---';
-$device = $_POST['user_device'] ?? '---';
-$location = $_POST['user_location'] ?? '---';
-$message = $_POST['user_message'] ?? '---';
+$name = isset($_POST['user_name']) ? $_POST['user_name'] : '---';
+$phone = isset($_POST['user_phone']) ? $_POST['user_phone'] : '---';
+$device = isset($_POST['user_device']) ? $_POST['user_device'] : '---';
+$location = isset($_POST['user_location']) ? $_POST['user_location'] : '---';
+$message = isset($_POST['user_message']) ? $_POST['user_message'] : '---';
 
 $to = 'parselian.study@yandex.ru';
 

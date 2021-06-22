@@ -23,8 +23,6 @@ $(window).on('load', function() {
     });
 
     $(document).on('click', function(e) {
-        console.log($(e.target));
-
         if ($(e.target).is('.open-popup-request')) {
             $('.popup-request').fadeIn();
         }
