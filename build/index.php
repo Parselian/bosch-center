@@ -238,12 +238,12 @@ require_once(__DIR__ . '/assets/configs/config.php');
 
 				<div class="request__form-input-wrap">
 					<label for="user-phone" class="request__form-input-label">Ваш телефон:*</label>
-					<input id="user-phone" type="text" name="user_phone" class="request__form-input" placeholder="+7 (999) 999-99-99">
+					<input id="user-phone" type="text" name="user_phone" class="request__form-input" placeholder="+7 (999) 999-99-99" required>
 					<svg class="request__form-input-icon">
 						<use xlink:href="./assets/stack/sprite.svg#call"></use>
 					</svg>
 				</div>
-				<button type="submit" class="button button_accent request__form-button open-popup-request">Вызвать мастера</button>
+				<button type="submit" class="button button_accent request__form-button">Вызвать мастера</button>
 			</div>
 
 			<div class="request__form-text">
@@ -254,7 +254,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 				<div class="request__form-col">
 					<div class="request__form-select-wrap">
 						<label for="device-select" class="request__form-select-label">Какая техника:</label>
-						<select id="device-select" type="text" class="request__form-select">
+						<select id="device-select" name="user_device" class="request__form-select">
 							<option value="Стиральная машина" selected>Стиральная машина</option>
 							<option value="Посудомоечная машина">Посудомоечная машина</option>
 							<option value="Варочная панель">Варочная панель</option>
@@ -282,7 +282,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 					</div>
 				</div>
 				<div class="request__form-textarea-wrap">
-					<textarea type="text" class="request__form-textarea" placeholder="Опишите вашу проблему"></textarea>
+					<textarea name="user_message" class="request__form-textarea" placeholder="Опишите вашу проблему"></textarea>
 					<svg class="request__form-textarea-icon">
 						<use xlink:href="./assets/stack/sprite.svg#chat"></use>
 					</svg>
@@ -343,7 +343,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 
 		<div class="request__form-input-wrap popup-form__input-wrap">
 			<label for="popup-user-phone" class="request__form-input-label">Ваш телефон:*</label>
-			<input id="popup-user-phone" type="text" name="user_phone" class="request__form-input" placeholder="+7 (999) 999-99-99">
+			<input id="popup-user-phone" type="text" name="user_phone" class="request__form-input" placeholder="+7 (999) 999-99-99" required>
 			<svg class="request__form-input-icon">
 				<use xlink:href="./assets/stack/sprite.svg#call"></use>
 			</svg>
@@ -368,7 +368,7 @@ require_once(__DIR__ . '/assets/configs/config.php');
 			Наш оператор свяжется с вами через 2 минуты
 		</div>
 
-		<button type="submit" class="button button_accent popup-form__button popup-form__close">Закрыть</button>
+		<button type="submit" class="button button_accent popup-form__button popup-form-thanks__button">Закрыть</button>
 
 	</div>
 </div>
