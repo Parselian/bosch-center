@@ -349,7 +349,8 @@ select, input, button {
   top: 0;
   z-index: 999999;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  display: none; }
   .popup:before {
     position: absolute;
     content: '';

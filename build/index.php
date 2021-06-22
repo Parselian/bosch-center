@@ -253,21 +253,27 @@ require_once(__DIR__ . '/assets/configs/config.php');
 			<div class="request__form-row">
 				<div class="request__form-col">
 					<div class="request__form-select-wrap">
-						<label for="device-select" class="request__form-select-label">Какое устройство:</label>
+						<label for="device-select" class="request__form-select-label">Какая техника:</label>
 						<select id="device-select" type="text" class="request__form-select">
 							<option value="Стиральная машина" selected>Стиральная машина</option>
+							<option value="Посудомоечная машина">Посудомоечная машина</option>
+							<option value="Варочная панель">Варочная панель</option>
+							<option value="Духовой шкаф">Духовой шкаф</option>
+							<option value="Сушильная машина">Сушильная машина</option>
+							<option value="Микроволновая печь">Микроволновая печь</option>
+							<option value="Кофемашина">Кофемашина</option>
+							<option value="Холодильник">Холодильник</option>
+							<option value="Вытяжка">Вытяжка</option>
 						</select>
 						<svg class="request__form-select-icon">
 							<use xlink:href="./assets/stack/sprite.svg#bookmark"></use>
 						</svg>
 					</div>
 					<div class="request__form-select-wrap">
-						<label for="problem-select" class="request__form-select-label">Какая проблема:</label>
-						<select id="problem-select" type="text" class="request__form-select">
-							<option value="Не спускает воду">Не спускает воду</option>
-						</select>
-						<svg class="request__form-select-icon">
-							<use xlink:href="./assets/stack/sprite.svg#search"></use>
+						<label for="user-address" class="request__form-input-label">Расположение (метро, район):</label>
+						<input id="user-address" type="text" name="user_phone" class="request__form-input" placeholder="Ваш адрес">
+						<svg class="request__form-input-icon">
+							<use xlink:href="./assets/stack/sprite.svg#placeholder"></use>
 						</svg>
 					</div>
 					<div class="request__form-footnote">
