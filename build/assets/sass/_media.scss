@@ -1,0 +1,401 @@
+@media (max-width: 1200px) {
+  .header {
+    &__contacts {
+      &-block {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  .steps {
+    &__wrap {
+      flex-wrap: wrap;
+    }
+    &__block {
+      width: 49%;
+      &:not(:last-child) {
+        margin-right: unset;
+      }
+      &:nth-child(-n+2) {
+        margin-bottom: 2%;
+      }
+      &:nth-child(odd) {
+        margin-right: 2%;
+      }
+    }
+  }
+  .contacts {
+    &__map {
+      height: 445px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__button {
+      display: none;
+    }
+  }
+  .promo {
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__title {
+      &:after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &__footfeature {
+      &:before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &__collage {
+      bottom: -5%;
+      right: -35%;
+    }
+  }
+  .devices {
+    &__card {
+      &s {
+        justify-content: center;
+      }
+
+      width: 49%;
+      text-align: center;
+      &:not(:nth-child(3n)) {
+        margin-right: unset;
+      }
+      &:not(:nth-child(2n)) {
+        margin-right: 2%;
+      }
+      &:not(:nth-last-child(-n+3)) {
+        margin-bottom: unset;
+      }
+      &:not(:last-child) {
+        margin-bottom: 3%;
+      }
+    }
+  }
+  .contacts {
+    &__wrap {
+      flex-direction: column;
+    }
+    &__col  {
+      width: 100%;
+    }
+    &__block {
+      margin-bottom: 40px;
+      text-align: center;
+      &-item {
+        &-text {
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .request {
+    &__form {
+      &-input {
+        &-wrap {
+          width: 33%;
+        }
+      }
+      &-col {
+        width: 40%;
+      }
+      &-textarea {
+        &-wrap {
+          width: 58%;
+        }
+      }
+    }
+  }
+  .footer {
+    &__wrap {
+      position: relative;
+      margin-bottom: 40px;
+    }
+    &__policy {
+      position: absolute;
+      left: 50%;
+      bottom: -35px;
+      transform: translateX(-50%);
+      text-align: center;
+      width: 100%;
+      .line-break {
+        display: inline-block;
+      }
+    }
+  }
+  .popup {
+    &-form {
+      &__input {
+        &-wrap {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__contacts {
+      flex-direction: column;
+      &-block {
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+        &-icon {
+          left: -25px;
+          width: 15px;
+          height: 15px;
+        }
+        &-label {
+          display: none;
+        }
+      }
+    }
+  }
+  .promo {
+    &__collage {
+      bottom: 0;
+      right: 0;
+      transform: scale(1.4);
+      filter: opacity(0.5);
+    }
+  }
+  .devices {
+    &__card {
+      &-title {
+        font-size: 22px;
+      }
+    }
+  }
+  .request {
+    &__form {
+      &-row {
+        &:first-child {
+          flex-wrap: wrap;
+        }
+        &:last-child {
+          flex-direction: column;
+        }
+      }
+      &-col {
+        width: 100%;
+      }
+      &-input {
+        &-wrap {
+          width: 49%;
+        }
+      }
+      &-button {
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        width: fit-content;
+        font-size: 22px;
+      }
+      &-text {
+        font-size: 18px;
+      }
+      &-textarea {
+        &-wrap {
+          width: 100%;
+        }
+      }
+      &-footnote {
+        display: none;
+        text-align: center;
+        &_mobile {
+          display: block;
+        }
+      }
+    }
+  }
+  .popup {
+    &-form {
+      &__input {
+        &-wrap {
+          width: 100%;
+        }
+      }
+      &__footnote {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+  .promo {
+    &__title {
+      font-size: 38px;
+    }
+  }
+  .steps {
+    &__block {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      &:nth-child(-n+2) {
+        margin-bottom: unset;
+      }
+      &:nth-child(odd) {
+        margin-right: auto;
+      }
+      &:not(:last-child) {
+        margin-bottom: 15px;
+        margin-right: auto;
+      }
+    }
+  }
+  .devices {
+    &__card {
+      &-button {
+        font-size: 16px;
+      }
+    }
+  }
+  .contacts {
+    &__block {
+      padding: 20px;
+      &-item {
+        &-text {
+          font-size: 16px;
+        }
+      }
+    }
+    &__map {
+      height: 300px;
+    }
+  }
+  .request {
+    padding: 60px 0;
+    &__title {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    &__wrap {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__logo {
+      margin-bottom: 25px;
+    }
+    &__contacts {
+      align-items: center;
+    }
+  }
+  .promo {
+    &__collage {
+      bottom: 10%;
+      transform: scale(2);
+    }
+  }
+  .devices {
+    &__card {
+      &s {
+        flex-direction: column;
+      }
+
+      width: 100%;
+     &-title {
+       margin-bottom: 30px;
+     }
+      &-img {
+        opacity: 0.5;
+      }
+      &-button {
+        font-size: 18px;
+      }
+    }
+  }
+  .request {
+    &__form {
+      &-input {
+        &-wrap {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+      &-button {
+        margin-top: 0;
+      }
+      &-text {
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .popup {
+    &-form {
+      max-width: 95%;
+    }
+  }
+}
+
+@media (max-width: 405px)  {
+  .promo {
+    &__title {
+      font-size: 32px;
+    }
+    &__footfeature {
+      font-size: 18px;
+    }
+  }
+  .popup {
+    &-form {
+      padding: 30px 20px;
+      max-height: 80vh;
+      overflow-y: auto;
+      &__subtitle {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .section {
+    &__title {
+      font-size: 28px;
+    }
+  }
+  .request {
+    &__form {
+      &-text {
+        font-size: 16px;
+      }
+      &-button {
+        width: 100%;
+      }
+    }
+  }
+  .popup {
+    &-form {
+      max-height: 75vh;
+    }
+  }
+}
